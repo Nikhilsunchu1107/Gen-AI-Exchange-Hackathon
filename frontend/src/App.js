@@ -418,7 +418,11 @@ const ProductUpload = () => {
         setStep(2);
       }, 2000);
     } catch (error) {
-      toast.error("Failed to generate AI content");
+      toast({
+        title: "Error",
+        description: "Failed to generate AI content",
+        variant: "destructive"
+      });
       setLoading(false);
     }
   };
