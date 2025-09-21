@@ -11,8 +11,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
 import { Separator } from "./components/ui/separator";
-import { toast } from "sonner";
 import { Toaster } from "./components/ui/toaster";
+import { useToast } from "./hooks/use-toast";
 import { Sparkles, Globe, Heart, Star, Upload, Mic, Languages, ShoppingBag, User, LogOut, Plus } from "lucide-react";
 import "./App.css";
 
