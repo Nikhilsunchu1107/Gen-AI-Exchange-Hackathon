@@ -12,7 +12,7 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
 import { Separator } from "./components/ui/separator";
 import { Toaster } from "./components/ui/toaster";
-import { useToast } from "./hooks/use-toast";
+import { toast } from "./hooks/use-toast";
 import { Sparkles, Globe, Heart, Star, Upload, Mic, Languages, ShoppingBag, User, LogOut, Plus } from "lucide-react";
 import "./App.css";
 
