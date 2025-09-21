@@ -63,7 +63,10 @@ const AuthProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     localStorage.removeItem('auth_token');
-    toast.info("Logged out successfully");
+    toast({
+      title: "Logged out successfully",
+      description: "Come back soon!"
+    });
   };
 
   return (
