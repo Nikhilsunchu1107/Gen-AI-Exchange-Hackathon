@@ -439,7 +439,11 @@ const ProductUpload = () => {
         navigate('/marketplace');
       }, 1500);
     } catch (error) {
-      toast.error("Failed to upload product");
+      toast({
+        title: "Error",
+        description: "Failed to upload product",
+        variant: "destructive"
+      });
     }
     setLoading(false);
   };
