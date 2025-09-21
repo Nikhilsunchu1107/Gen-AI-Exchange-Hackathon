@@ -54,7 +54,10 @@ const AuthProvider = ({ children }) => {
     
     setUser(mockUser);
     localStorage.setItem('auth_token', 'mock_token_123');
-    toast.success("Welcome to CraftVista! 🎉");
+    toast({
+      title: "Welcome to CraftVista! 🎉",
+      description: "Start showcasing your beautiful handmade crafts"
+    });
   };
 
   const logout = () => {
