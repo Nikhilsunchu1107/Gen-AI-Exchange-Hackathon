@@ -432,7 +432,10 @@ const ProductUpload = () => {
     try {
       // Mock submission for MVP
       setTimeout(() => {
-        toast.success("Product uploaded successfully! 🎉");
+        toast({
+          title: "Product uploaded successfully! 🎉",
+          description: "Your craft is now live on the marketplace"
+        });
         navigate('/marketplace');
       }, 1500);
     } catch (error) {
